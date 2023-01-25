@@ -1,6 +1,288 @@
+@font-face {
+  font-family: 'Tenada';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
+  width: 100vw;
+  min-height: 100vh;   
+  background: linear-gradient(#242535, #243b55);
   text-align: center;
 }
+
+#Home {
+  width: 85%;
+  /* height: calc(100vh - 55px); */
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App header{
+  max-width: 1750px;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 90px;
+  box-sizing: border-box;
+  /* background: rgba(255, 255, 255, 0.209); */
+}
+
+.App header .gnb{
+  width: 10%;
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  font-family: 'Tenada'; 
+  color: rgba(226, 195, 239, 0.789);
+}
+
+.App header .gnb:nth-child(1) img{
+  width: 23%;
+  opacity: .5;
+  transition: all .4s;
+  transform: scale(1);
+}
+
+.App header .gnb:nth-child(1) img:hover{
+  opacity: 1;
+  /* transform: translateY(-50%) scale(.75); */
+  transform: scale(.75);
+}
+
+.App header .gnb2{
+  width: 12%;
+}
+
+.App header .gnb2 .userGnb_info{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.App header .gnb2 .userGnb_info aside{
+  width: 48px;
+  height: 48px;
+  margin-top: 7px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+header .gnb2 .userGnb_info aside img{
+  width: 105%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App header .gnb2 .userGnb_info h4{
+  width: 52%;
+  height: 60px;
+  line-height: 65px;
+  margin: 0;
+  text-align: left;
+  font-size: .97rem;
+}
+
+#Home .perspective_light{
+  width: 30%;
+  height: 58vh;
+  /* background: rgba(240, 10, 75, 0.453); */
+  position: absolute;
+  top: 52%;
+  left: -5%;
+  transition: all .4s;
+  transform: translateY(-50%);
+  perspective: 1700px;
+}
+
+.perspective_light .mainLight{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  transform-style: preserve-3d;
+  transform: skewY(-15deg) translateZ(-100px);
+}
+
+.perspective_light .mainLight section {
+  width: 10%;
+  height: 100%;
+  background: rgba(42, 41, 41, 0.341);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  transform: skewY(-20deg);
+  box-shadow: -18px -2px 8px rgba(33, 33, 33, 0.395);
+  /* transform-style: preserve-3d; */
+  animation: turn_light .8s forwards;
+}
+/* @keyframes turn_light{
+  from{ transform: skewY(0); }
+  to{ transform: skewY(-20deg);}
+} */
+
+.perspective_light .mainLight section:nth-child(2){
+  transform: skewY(-20deg) translateZ(-300px);
+}
+.perspective_light .mainLight section:nth-child(3){
+  transform: skewY(-20deg) translateZ(-500px);
+}
+
+.perspective_light .mainLight section h3{  
+  width: 28px;
+  height: 28px;
+  margin: 0 auto;  
+  border-radius: 50%;
+  background: rgba(55, 148, 198, 0.35);
+  box-shadow: 0 0 10px 20px rgba(55, 148, 198, 0.2);
+  transition: all .4s;
+  transform: rotateY(50deg)
+}
+
+#Home .perspective_light2{
+  left: 74.5%;
+  transform: translateY(-50%) rotateY(-180deg);
+}
+
+
+
+
+.parent {
+  position            : absolute;
+  left                : 300px;
+  top                 : 300px;
+  width               : 200px;
+  height              : 200px;
+  box-sizing          : border-box;
+  border              : 2px solid white;
+
+  perspective         : 400px;
+}
+
+.cube {
+
+  width             : 100%;
+  height            : 100%;
+
+  transform-style   : preserve-3d;
+  animation         : rotateCube 3s infinite linear normal;
+
+}
+
+@keyframes rotateCube {
+
+  from { transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);   }
+  to   { transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg); }
+
+}
+
+.cube-face {
+
+  position    : absolute;
+  width       : 100%;
+  height      : 100%;
+  box-sizing  : border-box;
+  border      : 3px solid white;
+  box-shadow  : 0px 0px 40px 5px yellow;
+
+}
+
+.cube-face-front  { background: hsla(  0, 100%, 50%, 0.5); }
+.cube-face-right  { background: hsla( 60, 100%, 50%, 0.5); }
+.cube-face-back   { background: hsla(120, 100%, 50%, 0.5); }
+.cube-face-left   { background: hsla(180, 100%, 50%, 0.5); }
+.cube-face-top    { background: hsla(240, 100%, 50%, 0.5); }
+.cube-face-bottom { background: hsla(300, 100%, 50%, 0.5); }
+
+.cube-face-front  { transform: rotateY(  0deg) translateZ(100px); }
+.cube-face-right  { transform: rotateY( 90deg) translateZ(100px); }
+.cube-face-back   { transform: rotateY(180deg) translateZ(100px); }
+.cube-face-left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube-face-top    { transform: rotateX( 90deg) translateZ(100px); }
+.cube-face-bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+
+
+
+.background {
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around !important;
+  flex-wrap: wrap;
+}
+
+.light {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(240, 238, 221, 0.212);
+  margin: 15px;
+  transition: all .4s;
+ 
+}
+
+.on{
+  transition: all .4s;
+  background-color: rgba(176, 118, 231, 0.326);
+  box-shadow: 0 0 10px 18px rgba(165, 95, 231, 0.261);
+  animation: movingLight .5s forwards;
+}
+
+.on2{
+  transition: all .4s;
+  background-color: rgba(118, 199, 231, 0.326);
+  box-shadow: 0 0 10px 18px rgba(106, 172, 231, 0.293);
+  animation: movingLight2 .5s forwards;
+}
+
+.off{
+  background-color: rgba(76, 73, 73, 0.177)!important; 
+}
+
+@keyframes movingLight{
+  0%{box-shadow: 0 0 10px 5px rgba(165, 95, 231, 0.261);}
+  25%{box-shadow: 0 0 10px 10px rgba(165, 95, 231, 0.261);}
+  45%{box-shadow: 0 0 10px 18px rgba(165, 95, 231, 0.261);}
+  60%{box-shadow: 0 0 10px 10px rgba(165, 95, 231, 0.261);}
+  75%{box-shadow: 0 0 10px 5px rgba(165, 95, 231, 0.261);}
+  100%{box-shadow: 0 0 10px 14px rgba(165, 95, 231, 0.261);}
+}
+
+@keyframes movingLight2{
+  0%{box-shadow: 0 0 10px 5px rgba(106, 172, 231, 0.293);}
+  25%{box-shadow: 0 0 10px 10px rgba(106, 172, 231, 0.293);}
+  45%{box-shadow: 0 0 10px 18px rgba(106, 172, 231, 0.293);}
+  60%{box-shadow: 0 0 10px 10px rgba(106, 172, 231, 0.293);}
+  75%{box-shadow: 0 0 10px 5px rgba(106, 172, 231, 0.293);}
+  100%{box-shadow: 0 0 10px 14px rgba(106, 172, 231, 0.293);}
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -13,7 +295,918 @@
   }
 }
 
-.App-header {
+
+.total_wrap{
+  width: 100%;
+  /* margin-top: 6%; */
+}
+
+.total_wrap .company_ci{
+  margin: 0 auto;
+  width: 50%;
+  height: 60px;
+  line-height: 60px; 
+  position: relative;
+  perspective: 100px;
+  transform-style: preserve-3d;
+}
+
+.total_wrap .company_ci img {
+  display: block;
+  width: 41.5%;
+  transition: cubic-bezier(0.26, 0.41, 0.78, 0.17) .7s;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
+.show{
+  animation: forwards up .5s cubic-bezier(0.66,-0.06, 0.06, 0.82);
+}
+@keyframes up{
+  from{ transform: translateX(-50%) rotateX(-100deg); opacity: 0;}
+  to{transform: translateX(-50%) rotateX(0); opacity: 1;}
+}
+
+
+.slider3D {
+  width: 40%;
+  height: 430px;
+  perspective: 1000px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 6.5%;
+}
+
+.slider__viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1.1s cubic-bezier(0.68, 0.08, 0.27, 0.96);    
+}
+
+.slider__image {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 20px;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 300 48px/1 Menlo, monospace;
+  box-shadow: 0 0 0 0 rgba(128, 128, 128, 0.055);
+  color: #fff;
+  overflow: hidden;
+  opacity: 0.23;
+  transition: opacity 1.4s ease-in-out;
+  cursor: pointer;
+}
+
+.slider__image_active {
+  background: transparent;
+  box-shadow:
+  -1px -1px 15px 8px rgba(42, 147, 182, 0.524),
+  /* rgba(145, 64, 203, 0.558) 이색도 이쁨 */
+  7px 7px 20px 8px #0003,
+  4px 4px 15px 8px #0002;
+  opacity: 1;
+}
+
+.slider__image img{
+  width: 120%;
+  height: 100%;
+}
+
+.slideButton {
+  width: 250px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 80px;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  /* background: rgba(255, 255, 0, 0.309); */
+}
+
+.slideButton .button_3d {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: scale(.7);
+  transition: all .3s;
+}
+.slideButton .button_3d:hover {
+  transform: scale(1);
+}
+
+.slideButton .button_3d button {
+  width: 30px;
+  height: 30px;
+  line-height: 10px;
+  color: rgb(194, 165, 238);
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2.5px solid rgba(194, 172, 238, 0.687);
+  border-radius: 50%;
+  background: transparent;
+  background-color : rgba(208, 238, 242, 0.206);
+} 
+
+
+
+
+/* ------------------ 프로필 페이지 ---------------- */
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  box-shadow: 0 0 10px 2.6px rgba(240, 240, 151, 0.507); 
+  transition: all .4s !important; 
+  z-index: -10;
+}
+
+.AssetsButton{
+  width: 130px;
+  height: 130px;
+  background: none;
+  position: absolute;
+  border: none;
+  right: 70px;
+  bottom: 180px;
+  cursor: pointer;
+  animation: up_down .7s infinite ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes up_down{
+  from{ transform: translateY(-10px); }
+  to{ transform: translateY(10px); }
+}
+
+.AssetsButton aside{
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.AssetsButton aside img{
+  width: 57%;
+}
+
+.AssetsButton h3{
+  width: 100%;
+  color: #ded0f6;
+  font-size: .9rem;
+  font-family: 'Tenada'; 
+  margin-top: 13px;
+}
+
+.clientBox {
+  width: 66%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 35px;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  overflow: hidden;
+}
+
+.clientBox h2{
+  font-family: 'Tenada'; 
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.clientBox .profile{ 
+  width: 195px;
+  height: 195px;
+  margin: 0 auto;
+  margin-top: 55px;
+  background-color: azure;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid rgba(31, 13, 46, 0.695);
+  border-radius: 50%;
+
+}
+
+.clientBox .profile img {
+  width: 110%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clientBox .change_infoBox{
+  width: 39%;
+  margin: 0 auto;
+  margin-top: 42px;
+  padding:20px;
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+
+.clientBox form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  /* background: rgba(255, 166, 0, 0.211); */
+}
+
+.clientBox .file_button{
+  width: 30%;
+  height: 40px;
+  border-radius: 25px;
+  color: rgb(226, 195, 239);
+  font-family: 'Tenada'; 
+  font-size: 1.1rem;
+  /* background-color: #f0ecfc; */
+  background-image: linear-gradient(315deg, #4b4ba2 0%, #472f83 74%);
+  box-shadow: 0 7px 10px rgba(0,0,0,.6);
+}
+
+.clientBox .file_button label{
+  width: 100%;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.clientBox #chooseFile{
+  display: none;
+  visibility: hidden;
+}
+
+.clientBox #userName{
+  display: block;
+  width: 47%;
+  line-height: 38px; 
+  font-size: 16px;
+  color: rgb(226, 195, 239);
+  border: none;
+  border-bottom: 1px solid rgb(226, 195, 239);
+  outline: none;
+  text-align: center;
+  background: transparent;
+}
+
+.clientBox #userName::placeholder {
+  color: rgba(226, 195, 239, 0.327);
+  font-size: .9rem;
+}
+
+.clientBox .pf_save{
+  width: 89%;
+  height: 40px;
+  line-height: 45px;
+  margin-top: 40px;
+  border-radius: 25px;
+  border: none;
+  font-family: 'Tenada'; 
+  font-weight: bold;
+  font-size: 1.16rem;
+  color: rgb(226, 195, 239);
+  background-image: linear-gradient(315deg, #0e5e81 0%, #472f83 74%);
+  cursor: pointer;
+  box-shadow: 0 7px 10px rgba(0,0,0,.6);
+}
+
+.clientBox .user_info{
+  width: 39%;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding:20px;
+  box-sizing: border-box;
+  border-radius: 35px;
+  text-align: center;
+}
+
+.clientBox .user_info h3{
+  width: 82%;
+  height: 50px;
+  line-height: 55px;
+  margin: 0 auto;
+  font-family: 'Tenada'; 
+  font-size: 1.2rem;
+  color: rgb(226, 195, 239);
+  border-bottom: 2px solid rgba(226, 195, 239, 0.2);
+}
+
+.clientBox .user_info button{
+  width: 87%;
+  height: 40px;
+  line-height: 45px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 25px;
+  font-family: 'Tenada'; 
+  font-size: 1.2rem;
+  color: rgb(226, 195, 239);
+  background: none;
+  border: none;
+  background-image: linear-gradient(315deg, #0e5e81 0%, #472f83 74%);
+  box-shadow: 0 7px 10px rgba(0,0,0,.6);
+  cursor: pointer;
+}
+
+.slide_up{
+  animation: slideUP .6s forwards cubic-bezier(0.95, 0.32, 0.25, 0.79);
+}
+@keyframes slideUP{
+  from {transform: translateY(60px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+.slide_up2{
+  animation: slideUP2 .6s forwards cubic-bezier(0.95, 0.32, 0.25, 0.79);
+}
+@keyframes slideUP2{
+  from {transform: translateY(60px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+
+
+/* ------------------- 부동산 페이지 --------------------- */
+
+#realEstate{
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  /* background: linear-gradient(#242535, #243b55); */
+  padding: 15px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#realEstate .apt_SearchWrap{
+  width: 66%;
+  height:auto;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 35px;
+  padding: 35px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#realEstate .apt_SearchWrap h2{
+  width: 100%;
+  line-height: 45px;
+  font-size: 1.9rem;
+  font-family: 'twayair';
+  margin: 0;
+  margin-bottom: 35px;
+  color: rgb(221, 235, 248);
+}
+
+#realEstate .apt_SearchWrap .search_box{
+  width: 60%;
+  /* background: #0003; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.apt_SearchWrap .search_box select{
+  width: 37%;
+  height: 30px;
+  background: rgba(188, 209, 234, 0.622);
+  border: none;
+  box-shadow: 0 0 6px 2.5px rgba(118, 175, 240, 0.463);
+  border-radius: 15px;
+  color: #0d2241;
+  font-size: 1rem;
+}
+
+.apt_SearchWrap .search_box button {
+   width: 18%;
+   height: 35px;
+   border-radius: 20px;
+   background: rgba(12, 54, 95, 0.647);
+   border: none;
+   font-family: 'twayair';
+   color: rgb(221, 235, 248);
+   font-size: 1.05rem;
+   margin-top: -2px;
+   border: 2px solid rgba(118, 175, 240, 0.214);
+}
+
+.spinner-grow {
+  width: 50px !important;
+  height: 50px !important;
+  margin-top: 16%;
+  background: rgba(243, 230, 150, 0.775) !important;
+}
+
+#realEstate .apartTrading {
+  width: 100%;
+  /* height: 100px; */
+  /* background: #0e5e81; */
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  align-content: space-between; 
+  perspective: 12000px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+#realEstate .apartTrading section{
+  width: 24%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 12px rgba(33, 32, 32, 0.75);
+  background: rgba(146, 186, 234, 0.34);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-family: 'twayair';
+  animation: apt_ani forwards .5s cubic-bezier(0.71, 0.6, 0.37, 0.93);
+}
+@keyframes apt_ani {
+  from {transform: rotateX(-100deg); opacity: 0;}
+  to {transform: rotateX(0deg); opacity: 1; }
+}
+
+.apartTrading section h3 {
+  width: 100%;
+  line-height: 25px;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: bold;
+  color: rgba(9, 29, 84, 0.797);
+  margin: 7px 0;
+}
+.apartTrading section h3 span{
+  font-size: .9rem;
+  line-height: 10px;
+  color: rgba(152, 152, 88, 0.893);
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+  font-weight: 300;
+}
+
+.apartTrading section h2{
+  width: 100%;
+  line-height: 27px;
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 15px 0;
+  color: rgba(202, 204, 207, 0.951);
+  font-weight: 300;
+}
+.apartTrading section h2 span{
+  font-size: .88rem;
+  margin-left: 5px;
+  color: rgba(202, 204, 207, 0.651);
+}
+
+.apartTrading section h4 {
+  width: 100%;
+  text-align: left;
+  margin: 5px 0;
+  color: rgba(7, 28, 56, 0.79);
+  font-weight: 300;
+  font-size: .97rem;
+  letter-spacing: -1px;
+}
+.apartTrading section h4 span{
+  margin-left: 7px;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+/* --------------------- 회사 설명페이지 -------------------*/
+
+.explanation {
+  width: 90%;
+  height: 100%;  
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 2300px;
+  transform-style: preserve-3d;
+}
+
+.explanation .relative {
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 25, 28, 0.995);
+  position: relative;
+  animation: explan 1.2s forwards;
+}
+@keyframes explan {
+  from {transform: scale3d(.15, .15, .15) rotate3d(-1.5, -25, -12, 0.5turn); opacity: 0.5;}
+  to {transform: scale3d(1, 1, 1) rotate3d(0); opacity: 1;}
+}
+
+.explanation .relative .close {
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: none;
+  background-image: url(./aesset/icon-3.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all .4s;
+  transform: rotate(0);
+}
+.relative .close:hover {
+  transform: rotate(90deg) !important;
+}
+
+.explanation .relative .youtube {
+  width: 85%;
+  height: 72%;
+  margin-top: 7.5%;
+
+}
+
+
+.explanation .relative .line {
+  min-width: 15px;
+  min-height: 9px;
+  background: rgba(20, 160, 216, 0.762);
+  box-shadow: 0 0 8px 8px rgba(15, 167, 227, 0.45);
+  border-radius: 30px;
+  display: block;
+  animation: forwards .35s go cubic-bezier(0.12, 0.9, 0.13, 0.97);
+  animation-delay: 1.35s;
+}
+
+@keyframes go {
+  from {width: 15px;}
+  to {width: 100%;}
+}
+
+.explanation .relative .lt{
+  position: absolute;
+  top: 0px;
+}
+.explanation .relative .lb{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+
+
+
+
+
+@media all and (max-width: 1400px){ 
+  .App header .gnb{
+    width: 13%;
+  } 
+  .App header .gnb2{
+    width: 19%;
+  } 
+
+  #Home .perspective_light{ 
+    width: 22%;
+  }
+  #Home .perspective_light2{
+    left: 82.5%;
+    transform: translateY(-50%) rotateY(-180deg);
+  }
+  
+  .perspective_light .mainLight section {
+    width: 14%;
+  }  
+
+  .total_wrap .company_ci img {
+    width: 53.5%;
+  }  
+
+  .slider3D {
+    width: 46%;
+    height: 410px;
+    perspective: 1500px;
+  }  
+
+  .clientBox .change_infoBox{
+    width: 52%;
+  } 
+
+  .clientBox .user_info{
+    width: 52%;
+  }
+
+  .AssetsButton {
+    bottom: 145px;
+  }
+
+  #realEstate {
+    width: 90%;
+  }
+  
+  #realEstate .apt_SearchWrap {
+    width: 74%;
+  }  
+
+  #realEstate .apartTrading section{
+    width: 24%;
+  }
+
+
+}
+
+
+
+@media all and (max-width: 1000px){ 
+
+  .App header .gnb:nth-child(1) img {
+    width: 32%;
+  }  
+
+  .total_wrap .company_ci img {
+    width: 65.5%;
+  }  
+
+  .slider3D {
+    perspective: 1400px;
+    width: 64.5%;
+    height: 380px;
+    margin-top: 9%;
+  }  
+
+  .clientBox .profile {
+    width: 180px;
+    height: 180px;
+  }
+
+  .clientBox .change_infoBox {
+    width: 70%;
+  }
+  .clientBox .user_info {
+    width: 70%;
+  }
+
+  .AssetsButton {
+    right: 20px;
+  }
+
+  #realEstate .apt_SearchWrap h2 {
+    font-size: 1.65rem;
+  }  
+
+  #realEstate .apt_SearchWrap .search_box {
+    width: 83%;
+  }  
+
+  .apt_SearchWrap .search_box select {
+    font-size: .9rem;
+  }
+
+  #realEstate .apartTrading section {
+    width: 32.4%;
+  }
+
+  .apartTrading section h3 {
+    line-height: 25px;
+    font-size: 1.2rem;
+    margin: 7px 0;
+  }
+  .apartTrading section h3 span{
+    font-size: .8rem;
+  }
+  
+  .apartTrading section h2{
+    font-size: 1.4rem;
+    margin: 10px 0;
+  }
+  .apartTrading section h2 span{
+    font-size: .8rem;
+  }  
+  .apartTrading section h4 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: .87rem;
+  }
+  .apartTrading section h4 span{
+    margin-left: 7px;
+    font-size: 1.15rem;
+  }
+
+}
+
+
+@media all and (max-width: 600px){ 
+  
+  .App {
+   overflow: hidden;
+  }
+
+  .App header{
+    padding: 0 35px;
+  }
+
+  .App header .gnb:nth-child(1) img{
+    width: 50%;
+  }  
+
+  .App header .gnb2{
+    width: 42%;
+  } 
+
+  .App header .gnb2 .userGnb_info{
+    line-height: 55px;
+    justify-content: right;
+  }
+  
+  .App header .gnb2 .userGnb_info aside{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .App header .gnb2 .userGnb_info h4{
+    width: 52%;
+    margin-right: 5px;
+    text-align: right;
+    font-size: .97rem;
+  }
+
+  #Home {
+    width: 100%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    top: 55%;
+    overflow: hidden;
+  }
+
+  #Home .perspective_light{ 
+    display: none;
+  }
+  
+  .total_wrap .company_ci {
+    width: 60%;
+  }
+
+  .total_wrap .company_ci img {
+    width: 85.5%;
+  }
+
+  .slider3D {
+    width: 80.5%;
+    height: 400px;
+    perspective: 1500px;
+    margin-top: 10%;
+    /* position: relative;
+    top: 12%; */
+    /* 모바일에서 radius={210} 으로 바꿔주자 */
+  }
+
+  .explanation {
+    width: 100%;
+  }  
+
+  .clientBox {
+    width: 85%;
+    top: 51%;
+  }
+  
+  .clientBox .profile{ 
+    width: 155px;
+    height: 155px;
+    margin-top: 42px;
+  }  
+
+  .clientBox .change_infoBox{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 42px;
+    padding:20px;
+    box-sizing: border-box;
+    border-radius: 35px;
+  }
+
+  .clientBox #userName::placeholder {
+    font-size: .8rem;
+  }
+  
+  .clientBox .user_info{
+    width: 95%;
+  }
+
+  .AssetsButton {
+    width: 100px;
+    height: 100px;
+    bottom: 35px;
+    z-index: 100;
+  }
+
+  .AssetsButton h3 {
+    font-size: .8rem;
+  }
+
+  #realEstate {
+    width: 100%;
+  }
+  
+  #realEstate .apt_SearchWrap {
+    width: 100%;
+  }
+
+  #realEstate .apt_SearchWrap h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .apt_SearchWrap .search_box select {
+    font-size: .8rem;
+  }
+
+  #realEstate .apt_SearchWrap .search_box {
+    width: 100%;
+  }  
+
+  #realEstate .apartTrading section{
+    width: 49%;
+  }
+
+
+}
+
+
+@media all and (max-width: 450px){ 
+
+  .App header .gnb:nth-child(1) img{
+    width: 74%;
+  }  
+
+  .total_wrap .company_ci img {
+    width: 90.5%;
+  }
+
+  .slider3D {
+    width: 80.5%;
+    height: 375px;
+  }
+
+
+  .clientBox {
+    padding: 35px 15px;
+  }
+
+  .clientBox .change_infoBox{
+    padding:20px 5px;
+  }
+
+  .clientBox #userName::placeholder {
+    font-size: .8rem;
+  }
+  
+  .clientBox .user_info{
+    padding:20px 5px;
+  }
+
+  #realEstate .apt_SearchWrap { 
+    padding: 22px 8px;
+  }
+
+}
+
+
+
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +1215,5 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
