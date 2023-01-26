@@ -11,22 +11,32 @@ export const slide_data = [
     {
       img : 'https://static.line.games/uwo/roadmap/image/d202301-1.jpg?v=omyxnz90sq',
       gameName : '대항해시대',
-      explan : '우리가 바라던 바다 “대항해시대 Origin" 16세기, 세계가 아직 미지에 둘러싸였던 시대에서 펼쳐지는 이야기 사회과부도를 펼치며 전세계를 탐험했던 그때 그 시절 그 설렘을 다시 가슴에 품고 대항해시대로 모험을 떠나보세요'      
+      explan : '우리가 바라던 바다 “대항해시대 Origin" 16세기, 세계가 아직 미지에 둘러싸였던 시대에서 펼쳐지는 이야기 전세계를 탐험했던 그때 그 시절 그 설렘을 다시 가슴에 품고 대항해시대로 모험을 떠나보세요'      
     },  
     {
-      img : 'https://s1.pearlcdn.com/crimsondesert/staticUpload/Board/6da918ea13120201211023822659.jpg',      
+      img : 'https://s1.pearlcdn.com/crimsondesert/staticUpload/Board/6da918ea13120201211023822659.jpg',
+      gameName : '검은사막',
+      explan : '생동감 넘치는 그래픽과 사실감 있는 오디오를 구현하여 MMORPG의 한계를 시험하는 검은사막. 박진감 넘치는 전투와 공성전, 그리고 탐험과 무역, 낚시,조련,연금등 다양한 콘텐츠를 광활한 오픈월드에서 즐기세요.'      
     },  
     {
-      img : 'https://callisto.sds.com/core/img/home/main-card-desktop.jpg',      
+      img : 'https://aw.game.daum.net/aw/pc/pre-assets/images/world_view_visual_2_1.jpg',      
+      gameName : '아키에이지 워',
+      explan : '아키에이지 워는 PC MMORPG 원작 ‘아키에이지’의 IP를 활용한 PC·모바일 크로스플랫폼 대작 MMORPG다. ‘아키에이지’ 대비 필드전 및 해상전 등 대규모전투 콘텐츠를 강조한 점이 특징입니다.'
     },  
-    {
-      img : 'https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5351%2F2022%2F11%2F17%2F0000100439_001_20221117122001970.jpg&type=sc960_832',      
+    {         
+      img : 'https://callisto.sds.com/core/img/home/main-card-desktop.jpg',    
+      gameName : '칼리스토 프로토콜',
+      explan : '칼리스토 프로토콜은 2320년경의 목성위성 칼리스토가 무대인 차세대 생존 공포 게임 입니다. 플레이어는 최고보안 등급의 블랙아이언 교도소를 탈출하고 그곳의 끔찍한 비밀을 밝혀내야 합니다.'
     },  
 ];
 
 
 export const youtube = [
-    <iframe className='youtube' src="https://www.youtube.com/embed/io2gTGLymJ0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    {
+      ci : 'https://raw.githubusercontent.com/jinhee5577/allData/master/LINE%20Games%20CI_logo_white.png',
+      iframe :  <iframe className='youtube' src="https://www.youtube.com/embed/io2gTGLymJ0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    }
+   
     
 ];
 

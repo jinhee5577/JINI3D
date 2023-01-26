@@ -12,6 +12,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NEXONFootballGothicBA1';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXONFootballGothicBA1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .App {
   width: 100vw;
   min-height: 100vh;   
@@ -332,7 +340,7 @@ header .gnb2 .userGnb_info aside img{
 
 
 .slider3D {
-  width: 40%;
+  width: 44%;
   height: 430px;
   perspective: 1000px;
   margin: 0 auto;
@@ -360,20 +368,20 @@ header .gnb2 .userGnb_info aside img{
   margin: auto;
   box-sizing: border-box;
   border-radius: 20px;   
+  background: rgba(7, 32, 54, 0.633);
   display: flex;
   align-items: center;
   justify-content: center;
   font: 300 48px/1 Menlo, monospace;
   box-shadow: 0 0 0 0 rgba(128, 128, 128, 0.055);
-  color: #fff;
   overflow: hidden;
-  opacity: 0.23;
+  opacity: 0.13;
   transition: opacity 1.4s ease-in-out;
   cursor: pointer;
 }
 
 .slider__image_active {
-  background: transparent;
+  /* background: transparent; */
   box-shadow:
   -1px -1px 15px 8px rgba(42, 147, 182, 0.524),
   /* rgba(145, 64, 203, 0.558) 이색도 이쁨 */
@@ -382,9 +390,50 @@ header .gnb2 .userGnb_info aside img{
   opacity: 1;
 }
 
-.slider__image img{
+.slider__image section { 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Tenada';
+}
+
+.slider__image section img{
   width: 120%;
   height: 100%;
+  opacity: .6;
+}
+
+.slider__image section h2 {
+  width: 100%;
+  position: absolute;
+  color: rgb(227, 231, 234);
+  text-align: left;
+  top: 0;
+  font-size: 2.5rem;
+  padding: 25px;
+  padding-left: 32px;
+  box-sizing: border-box;
+  transition: all .45s;
+  transform: translateX(-102%);
+  opacity: .15;
+} 
+.textOn { transform: translateX(0) !important; opacity: 1 !important; }
+
+.slider__image section p {
+  width: 100%;
+  font-size: 1.23rem;
+  font-weight: normal;
+  font-family: 'NEXONFootballGothicBA1';
+  line-height: 25.5px;
+  margin: 0;
+  padding: 0 25px 25px 55px;
+  color: rgb(204, 140, 108);
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: all .45s;
+  transform: translateX(102%);
 }
 
 .slideButton {
@@ -481,7 +530,7 @@ header .gnb2 .userGnb_info aside img{
   transform: translate(-50%, -50%);
   padding: 35px;
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 13px 25px rgba(0,0,0,.6);
   overflow: hidden;
 }
 
@@ -853,26 +902,26 @@ header .gnb2 .userGnb_info aside img{
 }
 
 .explanation .relative .youtube {
-  width: 85%;
-  height: 72%;
-  margin-top: 7.5%;
+  width: 68%;
+  height: 61%;
+  margin-top: 10%;
 
 }
 
-
 .explanation .relative .line {
-  min-width: 15px;
+  min-width: 10px;
   min-height: 9px;
   background: rgba(20, 160, 216, 0.762);
   box-shadow: 0 0 8px 8px rgba(15, 167, 227, 0.45);
   border-radius: 30px;
-  display: block;
-  animation: forwards .35s go cubic-bezier(0.12, 0.9, 0.13, 0.97);
-  animation-delay: 1.35s;
+  display: block;  
 }
-
+.go_line{
+  animation: forwards .35s go cubic-bezier(0.12, 0.9, 0.13, 0.97);
+  animation-delay: 1.25s;
+}
 @keyframes go {
-  from {width: 15px;}
+  from {width: 10px;}
   to {width: 100%;}
 }
 
@@ -916,10 +965,17 @@ header .gnb2 .userGnb_info aside img{
   }  
 
   .slider3D {
-    width: 46%;
+    width: 48%;
     height: 410px;
     perspective: 1500px;
   }  
+
+  .slider__image section h2 {
+    font-size: 2.4rem;
+  } 
+  .slider__image section p {
+    font-size: 1.13rem;
+  }
 
   .clientBox .change_infoBox{
     width: 52%;
@@ -1093,6 +1149,15 @@ header .gnb2 .userGnb_info aside img{
     /* 모바일에서 radius={210} 으로 바꿔주자 */
   }
 
+  .slider__image section h2 {
+    font-size: 2.1rem;
+    padding-left: 25px;
+    padding-right: 0;
+  } 
+  .slider__image section p {
+    font-size: 1rem;
+  }
+
   .explanation {
     width: 100%;
   }  
@@ -1180,6 +1245,16 @@ header .gnb2 .userGnb_info aside img{
     height: 375px;
   }
 
+  .slider__image section h2 {
+    font-size: 1.9rem;
+    padding-left: 25px;
+    padding-right: 0;
+  } 
+  .slider__image section p {
+    font-size: .88rem;
+    padding-left: 25px;
+    text-align: left;
+  }
 
   .clientBox {
     padding: 35px 15px;
@@ -1197,8 +1272,24 @@ header .gnb2 .userGnb_info aside img{
     padding:20px 5px;
   }
 
+  #realEstate {
+    padding: 12px;
+  }
+
   #realEstate .apt_SearchWrap { 
     padding: 22px 8px;
+  }
+
+  #realEstate .apartTrading section {
+    width: 100%;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .apartTrading section h2 {
+    margin: 0;
+    margin-bottom: 3px;
   }
 
 }
