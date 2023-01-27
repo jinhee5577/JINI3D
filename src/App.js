@@ -39,7 +39,7 @@ function App() {
           <Link to='/client' className='gnb gnb2'>{modifyTab ? <UserGnbInfo userInfo={userInfo} /> : '고객 전용'}</Link>
         </header>
 
-        { explanTab
+        { explanTab.switch
           ? <Explanation />
           : null          
         }

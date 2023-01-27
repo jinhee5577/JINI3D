@@ -14,7 +14,7 @@ export const slide_data = [
       explan : '우리가 바라던 바다 “대항해시대 Origin" 16세기, 세계가 아직 미지에 둘러싸였던 시대에서 펼쳐지는 이야기 전세계를 탐험했던 그때 그 시절 그 설렘을 다시 가슴에 품고 대항해시대로 모험을 떠나보세요'      
     },  
     {
-      img : 'https://s1.pearlcdn.com/crimsondesert/staticUpload/Board/6da918ea13120201211023822659.jpg',
+      img : 'https://s1.pearlcdn.com/KR/Upload/WALLPAPER/857146e138520230111090106776.jpg',
       gameName : '검은사막',
       explan : '생동감 넘치는 그래픽과 사실감 있는 오디오를 구현하여 MMORPG의 한계를 시험하는 검은사막. 박진감 넘치는 전투와 공성전, 그리고 탐험과 무역, 낚시,조련,연금등 다양한 콘텐츠를 광활한 오픈월드에서 즐기세요.'      
     },  
@@ -33,11 +33,25 @@ export const slide_data = [
 
 export const youtube = [
     {
-      ci : 'https://raw.githubusercontent.com/jinhee5577/allData/master/LINE%20Games%20CI_logo_white.png',
-      iframe :  <iframe className='youtube' src="https://www.youtube.com/embed/io2gTGLymJ0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
-    }
-   
-    
+      name : '크로스파이어X',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/rK12kTcCxn8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+      name : '대항해시대',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/QUohig63yfo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+      name : '검은사막',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/j-3lpc0hy4A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+      name : '아키에이지 워',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/aAFzthP0gbE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+      name : '칼리스토 프로토콜',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/3y8VHzokSHM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    }, 
 ];
 
 

@@ -29,15 +29,19 @@ export let { nowIndex } = Index.actions;
 
 const explanTab = createSlice({   // Explanation컴포넌트 보일 상태.
      name : 'explanTab',
-     initialState : false,
+     initialState : {switch : false, ind : 0},
      reducers : {
-        showExplanTab(state, action){
-           return action.payload;
-        }    
+        showExplanTab(state, action){  // switch병경.
+           state.switch = action.payload;
+        },  
+        
+        getIndex(state, action){  // 선택한 ind번호 가져온다.
+           state.ind = action.payload;     
+        }
      }
 });
 
-export let { showExplanTab } = explanTab.actions;
+export let { showExplanTab, getIndex } = explanTab.actions;
 
 
 
