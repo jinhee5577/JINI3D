@@ -10,7 +10,7 @@ export const slide_data = [
     },  
     {
       img : 'https://static.line.games/uwo/roadmap/image/d202301-1.jpg?v=omyxnz90sq',
-      gameName : '대항해시대',
+      gameName : '대항해시대 오리진',
       explan : '우리가 바라던 바다 “대항해시대 Origin" 16세기, 세계가 아직 미지에 둘러싸였던 시대에서 펼쳐지는 이야기 전세계를 탐험했던 그때 그 시절 그 설렘을 다시 가슴에 품고 대항해시대로 모험을 떠나보세요'      
     },  
     {
@@ -35,22 +35,27 @@ export const youtube = [
     {
       name : '크로스파이어X',
       iframe : <iframe className='youtube' src="https://www.youtube.com/embed/rK12kTcCxn8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '레메디 엔터테인먼트가 독자 개발한 ‘노스라이트’ 엔진을 통해 자연스럽게 실제플레이 화면과 연결되는 크로스파이어X 특유의 연출을 느껴보세요.',
     },
     {
-      name : '대항해시대',
+      name : '대항해시대 오리진',
       iframe : <iframe className='youtube' src="https://www.youtube.com/embed/QUohig63yfo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '전세계를 항해하며 신항로를 개척하는 모험을 떠납니다. 유럽부터 아시아까지 각 나라의 도시를 탐험하고 구름으로 가려진 세계지도를 완성해 보세요.',
     },
     {
       name : '검은사막',
       iframe : <iframe className='youtube' src="https://www.youtube.com/embed/j-3lpc0hy4A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '펄어비스 자체 개발엔진으로 구현된 아름다운 오픈월드를 만나보세요. 리얼함을 넘어 새로운 경험을 선사하는 극한의 그래픽이 모험가 여러분을 찾아갑니다.',
     },
     {
       name : '아키에이지 워',
       iframe : <iframe className='youtube' src="https://www.youtube.com/embed/aAFzthP0gbE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '원대륙의 멸망과 대이주후, 각 종족은 뿔뿔이 흩어져 누이아 대륙(서대륙) 곳곳에 각자의 공동체를 설립했다. 긴 시간이 흐른 뒤 누이안 종족의 국가인 <이즈나 왕가>가 대륙의 패권을 쥐고 다른 국가와 종족 연합들을 복속시켰다.',
     },
     {
       name : '칼리스토 프로토콜',
       iframe : <iframe className='youtube' src="https://www.youtube.com/embed/3y8VHzokSHM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '치밀하게 설계된 극한 공포 Glen Schofield의 차세대 생존 공포 게임 칼리스토 프로토콜은 압도적 분위기와 숨 막히는 긴장감, 잔혹한 무력감과 휴머니티가 절묘한 앙상블을 이룬 작품입니다.',
     }, 
 ];
 

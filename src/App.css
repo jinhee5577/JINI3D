@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FUNFLOWSURVIVORKR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .App {
   width: 100vw;
@@ -881,6 +888,31 @@ header .gnb2 .userGnb_info aside img{
   to {transform: scale3d(1, 1, 1) rotate3d(0); opacity: 1;}
 }
 
+.explanation .relative h2{
+  width: 100%;
+  color: white;
+  padding: 60px 30px;
+  padding-bottom: 45px;
+  padding-left: 11%;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 2.8rem;
+  font-family: 'Tenada';
+}
+
+.explanation .relative p{
+  width: 70%;
+  padding: 0 80px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(68, 159, 138);
+  font-family: 'FUNFLOWSURVIVORKR';
+  font-size: 1.2rem;
+  font-weight: 400 !important;
+}
+
 .explanation .relative .close {
   width: 70px;
   height: 70px;
@@ -904,8 +936,7 @@ header .gnb2 .userGnb_info aside img{
 .explanation .relative .youtube {
   width: 68%;
   height: 61%;
-  margin-top: 10%;
-
+  border-radius: 30px;
 }
 
 .explanation .relative .line {
@@ -977,6 +1008,24 @@ header .gnb2 .userGnb_info aside img{
     font-size: 1.13rem;
   }
 
+  .explanation .relative h2{
+    padding: 60px 30px;
+    padding-bottom: 45px;
+    padding-left: 11%;
+    font-size: 2.6rem;
+  }
+  
+  .explanation .relative p{
+    width: 70%;
+    padding: 0 60px;
+    font-size: 1rem;
+  }
+
+  .explanation .relative .youtube {
+    width: 68%;
+    height: 59%;
+  }
+
   .clientBox .change_infoBox{
     width: 52%;
   } 
@@ -1022,6 +1071,24 @@ header .gnb2 .userGnb_info aside img{
     height: 380px;
     margin-top: 9%;
   }  
+
+  .explanation .relative h2{
+    padding: 60px 30px;
+    padding-bottom: 45px;
+    padding-left: 11%;
+    font-size: 2.4rem;
+  }
+  
+  .explanation .relative p{
+    width: 78%;
+    padding: 0 30px;
+    font-size: 1rem;
+  }
+
+  .explanation .relative .youtube {
+    width: 77%;
+    height: 54%;
+  }
 
   .clientBox .profile {
     width: 180px;
@@ -1162,6 +1229,29 @@ header .gnb2 .userGnb_info aside img{
     width: 100%;
   }  
 
+  .explanation .relative h2{
+    padding: 60px 30px;
+    padding-bottom: 45px;
+    font-size: 2.1rem;
+  }
+  
+  .explanation .relative p{
+    width: 95%;
+    padding: 0 30px;
+    font-size: 1rem;
+  }
+
+  .explanation .relative .youtube {
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+  }
+
+  .explanation .relative .close {
+    width: 50px;
+    height: 50px;
+  }  
+
   .clientBox {
     width: 85%;
     top: 51%;
@@ -1254,6 +1344,15 @@ header .gnb2 .userGnb_info aside img{
     font-size: .88rem;
     padding-left: 25px;
     text-align: left;
+  }
+
+  .explanation .relative h2{
+    padding-left: 15px;
+  }
+
+  .explanation .relative p{
+    padding: 0 15px;
+    font-size: .9rem;
   }
 
   .clientBox {
