@@ -1057,9 +1057,17 @@ header .gnb2 .userGnb_info aside img{
 
 @media all and (max-width: 1000px){ 
 
+  .App header {
+    padding: 0 60px;
+  }
+
   .App header .gnb:nth-child(1) img {
     width: 32%;
   }  
+
+  .App header .gnb2 {
+    width: 23%;
+  }
 
   .total_wrap .company_ci img {
     width: 65.5%;
@@ -1158,7 +1166,7 @@ header .gnb2 .userGnb_info aside img{
   }
 
   .App header{
-    padding: 0 35px;
+    padding: 0 20px;
   }
 
   .App header .gnb:nth-child(1) img{
@@ -1166,7 +1174,7 @@ header .gnb2 .userGnb_info aside img{
   }  
 
   .App header .gnb2{
-    width: 42%;
+    width: 33%;
   } 
 
   .App header .gnb2 .userGnb_info{
@@ -1326,6 +1334,10 @@ header .gnb2 .userGnb_info aside img{
     width: 74%;
   }  
 
+  .App header .gnb2 {
+    width: 45%;
+  }
+
   .total_wrap .company_ci img {
     width: 90.5%;
   }
@@ -1372,7 +1384,7 @@ header .gnb2 .userGnb_info aside img{
   }
 
   #realEstate {
-    padding: 12px;
+    padding: 35px 12px 50px 12px;
   }
 
   #realEstate .apt_SearchWrap { 
