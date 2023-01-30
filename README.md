@@ -11,7 +11,7 @@
 해당지역 아파트매매정보를 가져옵니다.
 
 #### 사용 기술 : React, Redux, Javascript, Localstorage, 국토교통부API
-배포  : firebase
+#### 배포  : firebase
 
 ### 제가 개발한 JINI3D 사이트 링크는 : https://jinipro-a2903.web.app/ 입니다.
 ### 저의 JINI3D웹페이지의 자세한 코드내용은 면접에서 오픈하겠습니다.
