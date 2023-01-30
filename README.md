@@ -10,7 +10,7 @@
 선택한 시/도와 구/군을 해당법정동코드list에서 찾은후 지역코드를 뽑아서 요청 URL파라미터에 입력되어 
 해당지역 아파트매매정보를 가져옵니다.
 
-사용 기술 : React, Redux, Javascript, Localstorage, 국토교통부API
+#### 사용 기술 : React, Redux, Javascript, Localstorage, 국토교통부API
 배포  : firebase
 
 ### 제가 개발한 JINI3D 사이트 링크는 : https://jinipro-a2903.web.app/ 입니다.
