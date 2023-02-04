@@ -802,25 +802,37 @@ header .gnb2 .userGnb_info aside img{
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  justify-content: space-between;
-  align-content: space-between; 
+  /* justify-content: space-between; */
+  /* align-content: space-between;  */
   perspective: 12000px;
   transform-style: preserve-3d;
   overflow: hidden;
 }
 
 #realEstate .apartTrading section{
-  width: 24%;
+  width: 25%;  
+  height: auto;
+  margin-bottom: 24px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  box-shadow: -6px 10px 12px rgba(33, 32, 32, 0.75);
+  background: rgba(146, 186, 234, 0.34);
+  border-radius: 20px;
+  font-family: 'twayair';
+  animation: apt_ani forwards .5s cubic-bezier(0.71, 0.6, 0.37, 0.93);
+}
+
+/* #realEstate .apartTrading section > .aptCard {
+  width: 100%;  
   height: auto;
   padding: 10px;
   box-sizing: border-box;
   box-shadow: 0 10px 12px rgba(33, 32, 32, 0.75);
   background: rgba(146, 186, 234, 0.34);
   border-radius: 20px;
-  margin-bottom: 20px;
   font-family: 'twayair';
   animation: apt_ani forwards .5s cubic-bezier(0.71, 0.6, 0.37, 0.93);
-}
+} */
 @keyframes apt_ani {
   from {transform: rotateX(-100deg); opacity: 0;}
   to {transform: rotateX(0deg); opacity: 1; }
@@ -1069,7 +1081,32 @@ header .gnb2 .userGnb_info aside img{
   }  
 
   #realEstate .apartTrading section{
-    width: 24%;
+    width: 25%;
+  }
+
+  .apartTrading section h3 {
+    line-height: 25px;
+    font-size: 1.2rem;
+  }
+  .apartTrading section h3 span{
+    font-size: .79rem;
+  }
+  
+  .apartTrading section h2{
+    font-size: 1.4rem;
+    margin: 10px 0;
+  }
+  .apartTrading section h2 span{
+    font-size: .78rem;
+  }
+  
+  .apartTrading section h4 {
+    margin: 5px 0;
+    margin-top: 0;
+    font-size: .87rem;
+  }
+  .apartTrading section h4 span{
+    font-size: 1.15rem;
   }
 
 
@@ -1141,7 +1178,7 @@ header .gnb2 .userGnb_info aside img{
   }  
 
   #realEstate .apt_SearchWrap .search_box {
-    width: 83%;
+    width: 87%;
   }  
 
   .apt_SearchWrap .search_box select {
@@ -1149,7 +1186,7 @@ header .gnb2 .userGnb_info aside img{
   }
 
   #realEstate .apartTrading section {
-    width: 32.4%;
+    width: 33.3333%;
   }
 
   .apartTrading section h3 {
@@ -1179,6 +1216,21 @@ header .gnb2 .userGnb_info aside img{
   }
 
 }
+
+
+@media all and (max-width: 720px){ 
+  #realEstate .apt_SearchWrap {
+    width: 84%;
+    padding: 30px;
+  }
+
+  #realEstate .apartTrading section {
+    width: 50%;
+  }
+
+
+}
+
 
 
 @media all and (max-width: 600px){ 
@@ -1343,7 +1395,7 @@ header .gnb2 .userGnb_info aside img{
   }  
 
   #realEstate .apartTrading section{
-    width: 49%;
+    width: 50%;
   }
 
 
