@@ -723,11 +723,11 @@ header .gnb2 .userGnb_info aside img{
 /* ------------------- 부동산 페이지 --------------------- */
 
 #realEstate{
-  width: 85%;
+  width: 86%;
   height: auto;
   margin: 0 auto;
   /* background: linear-gradient(#242535, #243b55); */
-  padding: 15px;
+  padding: 10px;
   padding-top: 35px;
   padding-bottom: 50px;
   box-sizing: border-box;
@@ -813,18 +813,14 @@ header .gnb2 .userGnb_info aside img{
   width: 25%;  
   height: auto;
   margin-bottom: 24px;
-  padding: 10px 12px;
+  /* padding: 10px 12px; */
+  padding: 0 7px;
   box-sizing: border-box;
-  box-shadow: -6px 10px 12px rgba(33, 32, 32, 0.75);
-  background: rgba(146, 186, 234, 0.34);
-  border-radius: 20px;
-  font-family: 'twayair';
-  animation: apt_ani forwards .5s cubic-bezier(0.71, 0.6, 0.37, 0.93);
 }
 
-/* #realEstate .apartTrading section > .aptCard {
+#realEstate .apartTrading section > .aptCard {
   width: 100%;  
-  height: auto;
+  height: 100%;
   padding: 10px;
   box-sizing: border-box;
   box-shadow: 0 10px 12px rgba(33, 32, 32, 0.75);
@@ -832,7 +828,7 @@ header .gnb2 .userGnb_info aside img{
   border-radius: 20px;
   font-family: 'twayair';
   animation: apt_ani forwards .5s cubic-bezier(0.71, 0.6, 0.37, 0.93);
-} */
+}
 @keyframes apt_ani {
   from {transform: rotateX(-100deg); opacity: 0;}
   to {transform: rotateX(0deg); opacity: 1; }
@@ -866,7 +862,7 @@ header .gnb2 .userGnb_info aside img{
   line-height: 27px;
   font-size: 1.6rem;
   text-align: left;
-  margin: 15px 0;
+  margin: 13px 0;
   color: rgba(202, 204, 207, 0.951);
   font-weight: 300;
 }
@@ -1004,8 +1000,11 @@ header .gnb2 .userGnb_info aside img{
 
 
 
-
 @media all and (max-width: 1400px){ 
+  .App header {
+    padding: 0 65px;
+  }
+
   .App header .gnb{
     width: 13%;
   } 
@@ -1082,6 +1081,7 @@ header .gnb2 .userGnb_info aside img{
 
   #realEstate .apartTrading section{
     width: 25%;
+    padding: 0 6px;
   }
 
   .apartTrading section h3 {
@@ -1219,6 +1219,10 @@ header .gnb2 .userGnb_info aside img{
 
 
 @media all and (max-width: 720px){ 
+  #realEstate {
+    padding: 35px 10px 50px 10px;
+  }
+
   #realEstate .apt_SearchWrap {
     width: 84%;
     padding: 30px;
@@ -1458,7 +1462,7 @@ header .gnb2 .userGnb_info aside img{
   }
 
   #realEstate {
-    padding: 35px 12px 50px 12px;
+    padding: 35px 9px 50px 9px;
   }
 
   #realEstate .apt_SearchWrap { 
@@ -1468,8 +1472,12 @@ header .gnb2 .userGnb_info aside img{
   #realEstate .apartTrading section {
     width: 100%;
     padding: 5px;
+    /* padding-left: 15px; */
+    margin-bottom: 7px;
+  }
+
+  #realEstate .apartTrading section > .aptCard {
     padding-left: 15px;
-    margin-bottom: 15px;
   }
 
   .apartTrading section h2 {
