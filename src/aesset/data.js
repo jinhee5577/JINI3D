@@ -19,7 +19,7 @@ export const slide_data = [
       explan : '생동감 넘치는 그래픽과 사실감 있는 오디오를 구현하여 MMORPG의 한계를 시험하는 검은사막. 박진감 넘치는 전투와 공성전, 그리고 탐험과 무역, 낚시,조련,연금등 다양한 콘텐츠를 광활한 오픈월드에서 즐기세요.'      
     },  
     {
-      img : 'https://aw.game.daum.net/aw/pc/pre-assets/images/world_view_visual_2_1.jpg',      
+      img : 'https://event.game.daum.net/aw/pc/pre-assets/images/world_view_visual_3_1.jpg',      
       gameName : '아키에이지 워',
       explan : '아키에이지 워는 PC MMORPG 원작 ‘아키에이지’의 IP를 활용한 PC·모바일 크로스플랫폼 대작 MMORPG다. ‘아키에이지’ 대비 필드전 및 해상전 등 대규모전투 콘텐츠를 강조한 점이 특징입니다.'
     },  
