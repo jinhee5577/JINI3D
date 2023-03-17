@@ -3,11 +3,11 @@ import $ from 'jquery';
 
 
 export const slide_data = [
-    {
-      img : 'https://raw.githubusercontent.com/jinhee5577/allData/master/cross.png',
-      gameName : '크로스파이어X',
-      explan : '크로스파이어X는 스마일게이트 엔터테인먼트에서 글로벌 최고의 기업들과 손을 잡고 선보이는 AAA급 콘솔 게임입니다.'
-    },  
+    {         
+      img : 'https://globalvx.dn.nexoncdn.co.kr/Web/upload/notice/230228/230228105738t.jpg',    
+      gameName : '베일드 엑스퍼트',
+      explan : 'PC슈팅 게임의 새로운 지평을 개척할 신규 TPS게임. 각자의 개성을 지닌 9명의 요원, 고유 스킬을 지닌 캐릭터를 선택해 승리를 위한 다양한 전략을 구사하며 사실적인 전투를 경험할 수 있습니다.'
+    }, 
     {
       img : 'https://static.line.games/uwo/roadmap/image/d202301-1.jpg?v=omyxnz90sq',
       gameName : '대항해시대 오리진',
@@ -23,20 +23,20 @@ export const slide_data = [
       gameName : '아키에이지 워',
       explan : '아키에이지 워는 PC MMORPG 원작 ‘아키에이지’의 IP를 활용한 PC·모바일 크로스플랫폼 대작 MMORPG다. ‘아키에이지’ 대비 필드전 및 해상전 등 대규모전투 콘텐츠를 강조한 점이 특징입니다.'
     },  
-    {         
-      img : 'https://callisto.sds.com/core/img/home/main-card-desktop.jpg',    
-      gameName : '칼리스토 프로토콜',
-      explan : '칼리스토 프로토콜은 2320년경의 목성위성 칼리스토가 무대인 차세대 생존 공포 게임 입니다. 플레이어는 최고보안 등급의 블랙아이언 교도소를 탈출하고 그곳의 끔찍한 비밀을 밝혀내야 합니다.'
-    },  
+    {
+      img : 'https://raw.githubusercontent.com/jinhee5577/allData/master/cross.png',
+      gameName : '크로스파이어X',
+      explan : '크로스파이어X는 스마일게이트 엔터테인먼트에서 글로벌 최고의 기업들과 손을 잡고 선보이는 AAA급 콘솔 게임입니다.'
+    },       
 ];
 
 
 export const youtube = [
     {
-      name : '크로스파이어X',
-      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/rK12kTcCxn8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
-      content : '레메디 엔터테인먼트가 독자 개발한 ‘노스라이트’ 엔진을 통해 자연스럽게 실제플레이 화면과 연결되는 크로스파이어X 특유의 연출을 느껴보세요.',
-    },
+      name : '베일드 엑스퍼트',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/S5pkZed4SmY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '요원들은 이에 맞서 보이드의 마이크로칩 <렙톤 시스템>을 파괴하거나 각 정부와 각기업의 요구에 따라 올바르게 개조하기 위해 렙톤의 지배 장악권을 두고 전 세계적인 글로벌 미션에 투입되었다.',
+    }, 
     {
       name : '대항해시대 오리진',
       iframe : <iframe className='youtube' src="https://www.youtube.com/embed/QUohig63yfo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
@@ -53,10 +53,10 @@ export const youtube = [
       content : '원대륙의 멸망과 대이주후, 각 종족은 뿔뿔이 흩어져 누이아 대륙(서대륙) 곳곳에 각자의 공동체를 설립했다. 긴 시간이 흐른 뒤 누이안 종족의 국가인 <이즈나 왕가>가 대륙의 패권을 쥐고 다른 국가와 종족 연합들을 복속시켰다.',
     },
     {
-      name : '칼리스토 프로토콜',
-      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/3y8VHzokSHM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
-      content : '치밀하게 설계된 극한 공포 Glen Schofield의 차세대 생존 공포 게임 칼리스토 프로토콜은 압도적 분위기와 숨 막히는 긴장감, 잔혹한 무력감과 휴머니티가 절묘한 앙상블을 이룬 작품입니다.',
-    }, 
+      name : '크로스파이어X',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/rK12kTcCxn8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '레메디 엔터테인먼트가 독자 개발한 ‘노스라이트’ 엔진을 통해 자연스럽게 실제플레이 화면과 연결되는 크로스파이어X 특유의 연출을 느껴보세요.',
+    },
 ];
 
 

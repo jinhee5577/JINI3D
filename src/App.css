@@ -409,6 +409,8 @@ header .gnb2 .userGnb_info aside img{
   width: 120%;
   height: 100%;
   opacity: .6;
+  position: relative;
+  left: -8%;
 }
 
 .slider__image section h2 {
@@ -445,7 +447,7 @@ header .gnb2 .userGnb_info aside img{
 }
 
 .slideButton {
-  width: 300px;
+  width: 260px;
   height: 40px;
   line-height: 40px;
   margin: 0 auto;
@@ -469,8 +471,8 @@ header .gnb2 .userGnb_info aside img{
 }
 
 .slideButton .button_3d button {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   line-height: 10px;
   color: rgb(194, 165, 238);
   font-size: 1rem;
@@ -1276,7 +1278,7 @@ header .gnb2 .userGnb_info aside img{
     width: 100%;
     padding-bottom: 30px;
     box-sizing: border-box;
-    top: 55%;
+    top: 58%;
     overflow: hidden;
   }
 
@@ -1310,6 +1312,10 @@ header .gnb2 .userGnb_info aside img{
   .slider__image section p {
     font-size: 1rem;
   }
+ 
+  .slideButton {
+    margin-top: 70px;
+  }
 
   .explanation {
     width: 100%;
@@ -1340,7 +1346,7 @@ header .gnb2 .userGnb_info aside img{
 
   .clientBox {
     width: 85%;
-    top: 51%;
+    top: 54%;
   }
   
   .clientBox .profile{ 

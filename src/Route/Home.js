@@ -174,11 +174,11 @@ function SlideButton ({ setCurrent, stateOn, Intval, rotateInterval }){
 
 function Title ({ currentIndex }){
   const [company_ci, SETcompany_ci] = useState([
-     'https://raw.githubusercontent.com/jinhee5577/allData/master/smileLOGO.png',
+     'https://www.nexongames.co.kr/img/sub/veiled_logo.png',
      'https://raw.githubusercontent.com/jinhee5577/allData/master/LINE%20Games%20CI_logo_white.png',
      'https://s1.pearlcdn.com/pearlabyss/contents/img/common/cm_bi_white.svg',
      'https://webofficial.kakaogames.com/live/official/image/mobile/20190424/img_logo.png',
-     'https://www.krafton.com/wp-content/themes/krafton/assets/img/logo/logo-white.png'
+     'https://raw.githubusercontent.com/jinhee5577/allData/master/smileLOGO.png',
   ]);
 
 
