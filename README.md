@@ -1,5 +1,9 @@
 # JINI3D
 
+<p align="center">
+  <img width="1000" alt="jini3dimg" src="https://github.com/jinhee5577/jiniDash/assets/82584287/d713a4f5-12f9-47c4-816b-0bb903deff1b">
+</p>
+
 새로운시도로 웹메인페이지 내용을 3D로 구현하여 창의적이며 입체적인 UX를 선보이기위해 현재도 계속
 개발진행중인 프로젝트입니다. PC와 모바일에서 보기 적합하도록 반응형 웹사이트 로 제작하였습니다.
 
