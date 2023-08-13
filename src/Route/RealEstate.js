@@ -26,7 +26,7 @@ function RealEstate () {
        SETfilter_loca(existenceDong);   
     };
 
-    const searchAPT = () => { 
+    const searchAPT = () => {
     //   console.log(selectSido);
        SETspinner(true);
        const findDong = filter_loca.find((item) => {
@@ -41,33 +41,38 @@ function RealEstate () {
   
     const getXMLfromAPI = async (code) => {
         // 국토교통부 xml
-        const baseurl = 'https://crazyplace.vercel.app/api/getMolitApi';         
-        const key ='Beovx/ZaM7OfGbg6iZ+06xFcFQSEdOQHVjYLQ6oaun/Nd7kcl9OdhAGIoHEtqq7z9ipubaB6aOYFYYW3OqHUzA==';        
-        const params = {
-            serviceKey : key,
-            LAWD_CD : code,
-            // numOfRows : 200,
-            DEAL_YMD : 202205,
-        };
+        // const baseurl = 'https://crazyplace.vercel.app/api/getMolitApi';
+        // const key ='Beovx/ZaM7OfGbg6iZ+06xFcFQSEdOQHVjYLQ6oaun/Nd7kcl9OdhAGIoHEtqq7z9ipubaB6aOYFYYW3OqHUzA==';
+        // const params = {
+        //     serviceKey : key,
+        //     LAWD_CD : code,
+        //     // numOfRows : 200,
+        //     DEAL_YMD : 202212,
+        // };
         
-        const queryString = new URLSearchParams(params).toString();
-        const requrl = `${baseurl}?${queryString}`;
-      
+        // const queryString = new URLSearchParams(params).toString();
+        // const requrl = `${baseurl}?${queryString}`;
+        
+        const baseurl = 'https://jinidash.du.r.appspot.com/realestate';
+        const params2 = {
+          LAWD_CD : code,
+          // numOfRows : 200,
+        };
+
         try{
          //   const resData = await fetch(requrl); 
          //   const {data} = await resData.json(); 
-           const {data} = await axios.get(requrl);
+           const {data: {response}} = await axios.get(baseurl, {params: params2});
          //   const XmlNode = new DOMParser().parseFromString(xmlString, 'text/xml');
          //   const {response} = xmlToJson(XmlNode);   
-         //  console.log(data); 
-           const aptData = data?.data?.items?.item
+           console.log(response);
+           const aptData = response?.body?.items?.item;
            SETapartTrading(aptData);
            SETspinner(false);
         }catch(error){
-           SETspinner(false);   
+           SETspinner(false);
            console.log(error); 
         }
-
     };    
 
     const test = async () => {
@@ -93,7 +98,7 @@ function RealEstate () {
             <div className='search_box'>
                <select name="sido1" id="sido1"></select>
                <select name="gugun1" id="gugun1" onChange={(e) => { SETgugun(e.target.value); }}></select>
-               <button onClick={searchAPT}>조회</button>           
+               <button onClick={searchAPT}>조회</button>
             </div>
         </div> 
         { spinner
