@@ -1,11 +1,16 @@
 # JINI3D
 
 <p align="center">
-  <img width="1000" alt="jini3dimg" src="https://github.com/jinhee5577/jiniDash/assets/82584287/d713a4f5-12f9-47c4-816b-0bb903deff1b">
+  <img width="950" alt="jini3dimg" src="https://github.com/jinhee5577/jiniDash/assets/82584287/d713a4f5-12f9-47c4-816b-0bb903deff1b">
 </p>
 <p align="center">
-  <img width="450" alt="jini3d4" align="left" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/4ff14fc3-f402-4feb-a1c7-cf9f8506611f">
-  <img width="450" alt="jini3d5" align="right" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/25baf8d8-3a15-4964-8cec-dfdea1fb7a01">
+  <img width="950" alt="jini3d4" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/4ff14fc3-f402-4feb-a1c7-cf9f8506611f">
+</p>
+<p align="center">
+  <img width="950" alt="jini3d2" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/6ef5c00d-afb3-4131-93ec-138fddb5f787">
+</p>
+<p align="center">
+  <img width="950" alt="jini3d3" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/4da8ba9c-4b94-43cb-a696-ec0546015dde">
 </p>
 
 새로운시도로 웹메인페이지 내용을 3D로 구현하여 창의적이며 입체적인 UX를 선보이기위해 현재도 계속
