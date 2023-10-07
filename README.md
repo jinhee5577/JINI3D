@@ -3,6 +3,10 @@
 <p align="center">
   <img width="1000" alt="jini3dimg" src="https://github.com/jinhee5577/jiniDash/assets/82584287/d713a4f5-12f9-47c4-816b-0bb903deff1b">
 </p>
+<p align="center">
+  <img width="450" alt="jini3d4" align="left" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/4ff14fc3-f402-4feb-a1c7-cf9f8506611f">
+  <img width="450" alt="jini3d5" align="right" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/25baf8d8-3a15-4964-8cec-dfdea1fb7a01">
+</p>
 
 새로운시도로 웹메인페이지 내용을 3D로 구현하여 창의적이며 입체적인 UX를 선보이기위해 현재도 계속
 개발진행중인 프로젝트입니다. PC와 모바일에서 보기 적합하도록 반응형 웹사이트 로 제작하였습니다.
