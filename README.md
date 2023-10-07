@@ -29,7 +29,7 @@
 
 
 #### 진행 기간 및 규모 : 2022년 12월 ~ 2023년 현재진행중, 개발 1명(본인).
-#### 사용 기술 : React, Redux, Javascript, Localstorage, 국토교통부API
+#### 사용 기술 : React, Redux, Javascript, Localstorage, Node.js, express, 국토교통부API
 #### 배포  : firebase
 
 성과 : 웹메인을 3D로 놀라운UX를 구현하기위해 다양한고민과 끈임없는시도를 통하여 개발하였습니다. 아직 버그가 존재하지만 
