@@ -13,6 +13,7 @@
   <img width="950" alt="jini3d3" src="https://github.com/jinhee5577/Jinhee_PF/assets/82584287/4da8ba9c-4b94-43cb-a696-ec0546015dde">
 </p>
 
+
 새로운시도로 웹메인페이지 내용을 3D로 구현하여 창의적이며 입체적인 UX를 선보이기위해 현재도 계속
 개발진행중인 프로젝트입니다. PC와 모바일에서 보기 적합하도록 반응형 웹사이트 로 제작하였습니다.
 
