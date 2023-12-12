@@ -337,6 +337,9 @@ header .gnb2 .userGnb_info aside img{
   left: 50%;
   transform: translateX(-50%);  
 }
+.total_wrap .company_ci img:nth-child(1){
+  width: 35%;
+}
 
 .show{
   animation: forwards up .5s cubic-bezier(0.66,-0.06, 0.06, 0.82);
@@ -1028,7 +1031,10 @@ header .gnb2 .userGnb_info aside img{
 
   .total_wrap .company_ci img {
     width: 53.5%;
-  }  
+  }
+  .total_wrap .company_ci img:nth-child(1){
+    width: 37%;
+  }
 
   .slider3D {
     width: 48%;
@@ -1132,7 +1138,10 @@ header .gnb2 .userGnb_info aside img{
 
   .total_wrap .company_ci img {
     width: 65.5%;
-  }  
+  }
+  .total_wrap .company_ci img:nth-child(1){
+    width: 51%;
+  }
 
   .slider3D {
     perspective: 1400px;
@@ -1293,6 +1302,9 @@ header .gnb2 .userGnb_info aside img{
   .total_wrap .company_ci img {
     width: 85.5%;
   }
+  .total_wrap .company_ci img:nth-child(1){
+    width: 68%;
+  }
 
   .slider3D {
     width: 80.5%;
@@ -1424,6 +1436,9 @@ header .gnb2 .userGnb_info aside img{
 
   .total_wrap .company_ci img {
     width: 90.5%;
+  }
+  .total_wrap .company_ci img:nth-child(1){
+    width: 76%;
   }
 
   .slider3D {

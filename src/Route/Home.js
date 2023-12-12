@@ -174,7 +174,7 @@ function SlideButton ({ setCurrent, stateOn, Intval, rotateInterval }){
 
 function Title ({ currentIndex }){
   const [company_ci, SETcompany_ci] = useState([
-     'https://www.nexongames.co.kr/img/sub/veiled_logo.png',
+     'https://lwi.nexon.com/kartdrift/gow/pre/logo.svg',
      'https://raw.githubusercontent.com/jinhee5577/allData/master/LINE%20Games%20CI_logo_white.png',
      'https://s1.pearlcdn.com/pearlabyss/contents/img/common/cm_bi_white.svg',
      'https://webofficial.kakaogames.com/live/official/image/mobile/20190424/img_logo.png',

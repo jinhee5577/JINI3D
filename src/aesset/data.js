@@ -4,9 +4,9 @@ import $ from 'jquery';
 
 export const slide_data = [
     {         
-      img : 'https://globalvx.dn.nexoncdn.co.kr/Web/upload/notice/230228/230228105738t.jpg',    
-      gameName : '베일드 엑스퍼트',
-      explan : 'PC슈팅 게임의 새로운 지평을 개척할 신규 TPS게임. 각자의 개성을 지닌 9명의 요원, 고유 스킬을 지닌 캐릭터를 선택해 승리를 위한 다양한 전략을 구사하며 사실적인 전투를 경험할 수 있습니다.'
+      img : 'https://lwi.nexon.com/kartdrift/gow/artwork/pop/Season2_5691x3206.jpg',    
+      gameName : '카트라이더: 드리프트',
+      explan : '태양이 이글거리는 사막부터 모든것이 얼어붙은 빙판까지! 고퀄리티의 그래픽으로 구현된 아름답고 디테일한 배경의 트랙에서 레이싱을 즐겨보세요.'
     }, 
     {
       img : 'https://static.line.games/uwo/roadmap/image/d202301-1.jpg?v=omyxnz90sq',
@@ -33,10 +33,10 @@ export const slide_data = [
 
 export const youtube = [
     {
-      name : '베일드 엑스퍼트',
-      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/S5pkZed4SmY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
-      content : '요원들은 이에 맞서 보이드의 마이크로칩 <렙톤 시스템>을 파괴하거나 각 정부와 각기업의 요구에 따라 올바르게 개조하기 위해 렙톤의 지배 장악권을 두고 전 세계적인 글로벌 미션에 투입되었다.',
-    }, 
+      name : '카트라이더: 드리프트',
+      iframe : <iframe className='youtube' src="https://www.youtube.com/embed/9XCXH_oj2uI?si=OLcDFlyENe6AruJn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+      content : '블랙 컴퍼니의 수장인 투탑은 랍토르 R, L에게 래빗홀에게서 레전드 컵을 지키라는 명령을 내린다. 랍토르 R, L은 래빗홀과 치열한 추격전을 벌이고 데릭과 렉스를 붙잡는 데엔 성공하지만 미소는 놓치고 마는데...',
+    },
     {
       name : '대항해시대 오리진',
       iframe : <iframe className='youtube' src="https://www.youtube.com/embed/QUohig63yfo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
