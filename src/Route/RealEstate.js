@@ -53,7 +53,7 @@ function RealEstate () {
         // const queryString = new URLSearchParams(params).toString();
         // const requrl = `${baseurl}?${queryString}`;
         
-        const baseurl = 'https://jini3d.du.r.appspot.com/realestate';
+        const baseurl = 'https://jinidash-427612.du.r.appspot.com/realestate';
         const params2 = {
           LAWD_CD : code,
           // numOfRows : 200,
