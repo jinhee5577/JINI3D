@@ -8,7 +8,9 @@ import { Provider } from 'react-redux';
 import store from './store.js';
 import 'bootstrap/dist/css/bootstrap.css';
 // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage"
 import "firebase/compat/firestore";
 import firebase from "firebase/compat/app";
 
@@ -22,10 +24,18 @@ const firebaseConfig = {
   appId: "1:39966975300:web:5844c7c96aaa34dbc12311"
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig); 
+// 기존 Initialize Firebase
+ firebase.initializeApp(firebaseConfig); 
 // firebase의 firestore 인스턴스를 변수에 저장
-export const firestore = firebase.firestore();
+ export const firestore = firebase.firestore();
+
+// Firebase 초기화
+// const app = initializeApp(firebaseConfig);
+// const db = getFirestore(app);
+// const storage = getStorage(app);
+// export { auth, db, storage };
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

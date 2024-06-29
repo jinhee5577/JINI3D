@@ -144,7 +144,8 @@ function Slider3D ( {slide_data, radius, mainLight, SETmainLight} ){
 
 
 function SlideButton ({ setCurrent, stateOn, Intval, rotateInterval }){ 
-    const [button, SETbutton] = useState([0, 1, 2, 3, 4, 'https://jinhee5577.github.io/Jinhee_PF/']);
+   // const [button, SETbutton] = useState([0, 1, 2, 3, 4, 'https://jinhee5577.github.io/Jinhee_PF/']);
+    const [button, SETbutton] = useState([0, 1, 2, 3, 4]);
 
     useEffect(() => { 
 
